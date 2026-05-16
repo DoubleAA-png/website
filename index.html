@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="ALL Plumbing Company - Charleston's most trusted local plumbers. 24/7 emergency service, upfront pricing, 4.6 stars from 168+ reviews.">
+  <meta name="theme-color" content="#0A66C2">
+  <title>ALL Plumbing | Charleston's Top-Rated Plumbers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<div id="preloader">
+  <div class="loader-ring"></div>
+  <div class="loader-logo"><i class="fas fa-wrench"></i> ALL Plumbing</div>
+  <p>Precision plumbing solutions</p>
+</div>
+
+<div class="mobile-overlay" id="mobileOverlay"></div>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-flex">
+    <div class="logo-area">
+      <a href="#" data-page="home" class="logo nav-link">
+        <i class="fas fa-wrench"></i> ALL<span>Plumbing</span>
+      </a>
+      <div class="rating-badge">
+        <i class="fas fa-star"></i> 4.6 <span>(168+)</span>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul class="nav-list">
+        <li><a href="#" data-page="home" class="nav-link active-page">Home</a></li>
+        <li><a href="#" data-page="services" class="nav-link">Services</a></li>
+        <li><a href="#" data-page="whyus" class="nav-link">Why Us</a></li>
+        <li><a href="#" data-page="reviews" class="nav-link">Reviews</a></li>
+        <li><a href="#" data-page="about" class="nav-link">About</a></li>
+        <li><a href="#" data-page="contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="btn-primary book-trigger">
+        <i class="fas fa-calendar-check"></i> Book Online
+      </button>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Menu" aria-expanded="false">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<main id="app" id="main-content">
+  
+  <!-- HOME PAGE -->
+  <section id="home-page" class="page active-page-section">
+    <div class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <span class="sup-badge">Charleston's most trusted plumber</span>
+          <h1>Local, Dependable <span class="highlight">Plumbing Services</span> in Charleston & Surrounding Areas.</h1>
+          <p>Same-day service • Upfront pricing • 24/7 emergency repairs</p>
+          <div class="hero-btns">
+            <button class="btn-primary book-trigger">
+              <i class="fas fa-calendar-alt"></i> Schedule Now
+            </button>
+            <a href="tel:+18437618002" class="btn-secondary">
+              <i class="fas fa-phone-alt"></i> (843) 761-8002
+            </a>
+          </div>
+          <div class="hero-trust">
+            <i class="fas fa-shield-alt"></i> Licensed & Insured
+            <span>•</span> 4.6 ★ (168+ reviews)
+            <span>•</span> 24/7 availability
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=600&h=500&fit=crop" alt="Professional plumber at work" loading="eager" decoding="async">
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-section container">
+      <div class="stat-card" data-target="168">
+        <span class="stat-number">0</span>
+        <div class="stat-label">Google Reviews</div>
+        <div class="star-fill-container"><div class="stars-filled"></div></div>
+        <div class="rating-text">4.6 ★ average</div>
+      </div>
+      <div class="stat-card" data-target="3520">
+        <span class="stat-number">0</span>
+        <div class="stat-label">Jobs Completed</div>
+        <i class="fas fa-check-circle stat-icon"></i>
+      </div>
+      <div class="stat-card" data-target="25">
+        <span class="stat-number">0</span>
+        <div class="stat-label">Years Experience</div>
+        <i class="fas fa-award stat-icon"></i>
+      </div>
+      <div class="stat-card" data-target="100">
+        <span class="stat-number">0</span>
+        <div class="stat-label">Satisfaction %</div>
+        <i class="fas fa-smile stat-icon"></i>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <h2>Why Charleston Chooses ALL Plumbing</h2>
+        <p>Honesty, speed, and craftsmanship — every single job</p>
+      </div>
+      <div class="why-grid" id="whyPreviewGrid"></div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <h2>Expert Plumbing Services</h2>
+        <p>Fast, reliable solutions for every problem</p>
+      </div>
+      <div class="services-grid" id="servicesPreviewGrid"></div>
+      <div class="center-btn">
+        <button class="btn-outline" data-page="services">View All Services <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <div class="container section">
+      <div class="section-head">
+        <h2>Real Reviews • Real Results</h2>
+        <p>Our customers speak for us</p>
+      </div>
+      <div class="testimonial-slider" id="featuredReviews"></div>
+    </div>
+
+    <div class="cta-banner-wrapper">
+      <div class="container cta-premium">
+        <div class="cta-content">
+          <h3>Emergency? No Problem.</h3>
+          <p><i class="fas fa-check-circle"></i> No overtime charges • <i class="fas fa-check-circle"></i> Free estimates • <i class="fas fa-check-circle"></i> Same-day service</p>
+          <button class="btn-primary book-trigger btn-large">
+            <i class="fas fa-calendar-plus"></i> Book Online Now — It's Fast & Easy
+          </button>
+        </div>
+        <div class="cta-guarantee">
+          <i class="fas fa-medal"></i> 100% Satisfaction Guaranteed
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES PAGE -->
+  <section id="services-page" class="page">
+    <div class="container section full-height-section">
+      <div class="section-head">
+        <h2>Our Complete Plumbing Services</h2>
+        <p>Whatever the issue, we have the solution</p>
+      </div>
+      <div id="fullServicesList" class="services-grid"></div>
+      <div class="pricing-note">
+        <i class="fas fa-receipt"></i> Transparent, upfront pricing — no surprises, ever.
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY US PAGE -->
+  <section id="whyus-page" class="page">
+    <div class="container full-height-section">
+      <div class="whyus-extended">
+        <div class="whyus-text">
+          <h2>Why We're Charleston's Best Plumber</h2>
+          <p>From emergency repairs to complete repiping, we treat your home like ours. Our commitment to transparent communication and superior workmanship sets us apart.</p>
+          <ul>
+            <li><i class="fas fa-clock"></i> 24/7 Emergency Dispatch</li>
+            <li><i class="fas fa-shield-alt"></i> Fixed-right-first-time guarantee</li>
+            <li><i class="fas fa-dollar-sign"></i> Financing options available</li>
+            <li><i class="fas fa-search"></i> Free on-site inspection with repair</li>
+            <li><i class="fas fa-user-check"></i> Background-checked technicians</li>
+            <li><i class="fas fa-hand-holding-heart"></i> Family-owned, veteran-operated</li>
+          </ul>
+        </div>
+        <div class="whyus-img">
+          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?w=500&h=400&fit=crop" alt="Happy customer with plumber" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVIEWS PAGE -->
+  <section id="reviews-page" class="page">
+    <div class="container full-height-section">
+      <div class="rating-summary-global">
+        <div class="big-rating">4.6 <i class="fas fa-star"></i></div>
+        <div>Based on <span id="totalReviewCount">168</span>+ verified customer reviews</div>
+        <div class="rating-bars" id="ratingBars"></div>
+        <div class="keyword-tags">
+          <span><i class="fas fa-fire"></i> water heater replacement</span>
+          <span><i class="fas fa-broom"></i> clogged drain</span>
+          <span><i class="fas fa-user-check"></i> professional tech</span>
+          <span><i class="fas fa-toilet"></i> toilet repair</span>
+          <span><i class="fas fa-water"></i> sump pump</span>
+        </div>
+      </div>
+      <div id="allReviewsList" class="review-grid-fixed"></div>
+      <button id="loadMoreReviews" class="load-more-btn">Load more reviews <i class="fas fa-arrow-down"></i></button>
+    </div>
+  </section>
+
+  <!-- ABOUT PAGE -->
+  <section id="about-page" class="page">
+    <div class="container full-height-section">
+      <div class="about-enhanced">
+        <div class="about-header">
+          <h2>About ALL Plumbing Company</h2>
+          <p>Charleston's most trusted name in plumbing since 1998</p>
+        </div>
+        <div class="about-grid-enhanced">
+          <div class="about-story">
+            <h3><i class="fas fa-book-open"></i> Our Story</h3>
+            <p>Founded by Tim Allgood, a Charleston native, ALL Plumbing started as a one-truck operation. Today, we're a 25+ person team serving thousands of happy homeowners across the Lowcountry.</p>
+            <p>Our headquarters at <strong>214 Howle Ave Unit A, Charleston, SC</strong> is a landmark for quality plumbing. Family-owned, no franchises — just real, local expertise.</p>
+            <img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=400&h=250&fit=crop" alt="Our team at work" class="about-story-img" loading="lazy" decoding="async">
+          </div>
+          <div class="about-mission">
+            <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+            <p>Honest, upfront plumbing solutions with zero hidden fees. We educate customers and fix problems right the first time.</p>
+            <div class="mission-stats">
+              <div><span>98%</span> First-time fix rate</div>
+              <div><span>4.6★</span> Average rating</div>
+              <div><span>24/7</span> Live answer</div>
+            </div>
+            <img src="https://images.unsplash.com/photo-1581092335871-4ef3c7bc6b6c?w=400&h=250&fit=crop" alt="Plumbing tools" class="about-mission-img" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="about-team">
+          <h3><i class="fas fa-users"></i> Meet the Leadership</h3>
+          <div class="team-grid">
+            <div class="team-card"><img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tim Allgood" loading="lazy"><h4>Tim Allgood</h4><p>Founder & Master Plumber</p></div>
+            <div class="team-card"><img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Joe Wilson" loading="lazy"><h4>Joe Wilson</h4><p>Operations Manager</p></div>
+            <div class="team-card"><img src="https://randomuser.me/api/portraits/men/52.jpg" alt="Thomas Reed" loading="lazy"><h4>Thomas Reed</h4><p>Lead Technician</p></div>
+          </div>
+        </div>
+        <div class="owner-quote-full">
+          <i class="fas fa-quote-left"></i> "It's hard to find dependable service these days, but Tim and his team delivered." – Jennings King, Google Review
+        </div>
+      </div>
+      <div class="map-section">
+        <iframe src="https://maps.google.com/maps?q=214%20Howle%20Ave%20Unit%20A%2C%20Charleston%2C%20SC%2029412&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="300" style="border:0; border-radius: 32px;" allowfullscreen="" loading="lazy" title="Google Map of ALL Plumbing location"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT PAGE -->
+  <section id="contact-page" class="page">
+    <div class="container full-height-section">
+      <div class="contact-premium">
+        <div class="contact-info-premium">
+          <h3><i class="fas fa-map-pin"></i> Visit Our Shop</h3>
+          <p>214 Howle Ave Unit A, Charleston, SC 29412</p>
+          <p><i class="fas fa-phone-alt"></i> <strong>(843) 761-8002</strong></p>
+          <p><i class="fas fa-envelope"></i> help@allplumbingcompany.com</p>
+          <p><i class="fas fa-clock"></i> <strong>Hours:</strong> Mon-Fri 7AM-7PM, Sat 8AM-4PM</p>
+          <div class="btn-group">
+            <button id="shareBtn" class="btn-outline" aria-label="Share company info"><i class="fas fa-share-alt"></i> Share</button>
+            <button id="saveBtn" class="btn-outline" aria-label="Save contact info"><i class="fas fa-save"></i> Save</button>
+            <button id="sendToPhoneBtn" class="btn-outline" aria-label="Send to phone"><i class="fas fa-mobile-alt"></i> Send to phone</button>
+          </div>
+        </div>
+        <div class="contact-form-premium">
+          <h3><i class="fas fa-paper-plane"></i> Send us a message</h3>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="input-group">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Full name" required aria-label="Full name">
+              </div>
+              <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" placeholder="Email address" required aria-label="Email address">
+              </div>
+            </div>
+            <div class="input-group">
+              <i class="fas fa-phone"></i>
+              <input type="tel" placeholder="Phone number" aria-label="Phone number">
+            </div>
+            <div class="input-group">
+              <i class="fas fa-comment-dots"></i>
+              <textarea rows="4" placeholder="Describe your plumbing issue..." aria-label="Message"></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-flex">
+    <div class="footer-logo"><i class="fas fa-wrench"></i> ALL Plumbing Company © 2025</div>
+    <div class="footer-contact"><i class="fas fa-phone"></i> (843) 761-8002</div>
+    <div class="footer-web"><i class="fas fa-globe"></i> allplumbingcompany.com</div>
+    <div class="footer-rating"><i class="fab fa-google"></i> 4.6 ★ (168+ reviews)</div>
+  </div>
+  <div class="bottom-bar">Charleston's most reliable plumbers — Licensed, Insured, and Ready to Help</div>
+</footer>
+
+<!-- BOOKING MODAL -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content premium-modal">
+    <span class="close-modal" aria-label="Close">&times;</span>
+    <div class="modal-header">
+      <i class="fas fa-calendar-check"></i>
+      <h2>Schedule Your Service</h2>
+      <p>Fast, reliable, and upfront pricing</p>
+    </div>
+    <form id="bookingForm" novalidate>
+      <div class="modal-form-group">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Full name" required aria-label="Full name">
+      </div>
+      <div class="modal-form-group">
+        <i class="fas fa-phone"></i>
+        <input type="tel" placeholder="Phone number" required aria-label="Phone number">
+      </div>
+      <div class="modal-form-group">
+        <i class="fas fa-envelope"></i>
+        <input type="email" placeholder="Email" aria-label="Email">
+      </div>
+      <div class="modal-form-group">
+        <i class="fas fa-tools"></i>
+        <select required aria-label="Service type">
+          <option value="">Select Service</option>
+          <option>Water Heater Repair</option>
+          <option>Drain Cleaning</option>
+          <option>Pipe Leak Repair</option>
+          <option>Toilet Installation</option>
+          <option>Emergency Plumbing</option>
+        </select>
+      </div>
+      <div class="modal-form-group">
+        <i class="fas fa-calendar-day"></i>
+        <input type="date" required aria-label="Preferred date">
+      </div>
+      <div class="modal-form-group">
+        <i class="fas fa-pen"></i>
+        <textarea placeholder="Additional details (optional)" aria-label="Additional details"></textarea>
+      </div>
+      <button type="submit" class="btn-primary modal-submit" id="bookingSubmitBtn">Confirm Booking <i class="fas fa-arrow-right"></i></button>
+    </form>
+    <div class="modal-guarantee">
+      <i class="fas fa-shield-alt"></i> 100% satisfaction guaranteed • No hidden fees
+    </div>
+  </div>
+</div>
+
+<div id="toastMsg" class="toast" role="status" aria-live="polite"></div>
+
+<a href="tel:+18437618002" class="floating-emergency" aria-label="Emergency call">
+  <i class="fas fa-phone-alt"></i> Emergency? Call Now
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
